@@ -21,7 +21,7 @@ function isBLT( ingredients ) {
 
     let numIngredients = ingredients.length;
 
-    const trueBLT = 3; //need 3 ingredients in the sandwich
+    const TRUE_BLT = 3; //need 3 ingredients in the sandwich
     let ingredientFound = 0; //counter to make sure we have the 3 req ingredients
 
     if ( ingredients[0] === "bread" && ingredients[numIngredients-1] === "bread" ) {
@@ -36,7 +36,7 @@ function isBLT( ingredients ) {
     }//end for loop
     } 
 
-    if ( ingredientFound === trueBLT ) {
+    if ( ingredientFound === TRUE_BLT ) {
         return true;
     } else {
         false;
